@@ -1,0 +1,65 @@
+ .car-banner-area {
+	position: relative;
+	width: 100%;
+}
+
+.banner-single-slider {
+	background-color: #eee;
+	background-position: center center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	height: 500px;
+}
+
+.slider-item-1 {
+	background: url(../../../assets/img/background.jpg);
+}
+
+
+
+.slider-offset {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(68, 68, 68, 0.9) none repeat scroll 0 0;
+	opacity: 0.4;
+	
+}
+
+.banner-text {
+	position: absolute;
+	top: 35%;
+	z-index: 1;
+	width: 100%;
+	text-align: center
+}
+
+.banner-search h2 {
+	color: #fff;
+	text-transform: capitalize;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 15px;
+}
+
+.banner-search h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 500;
+}
+.about{
+    height: 400px;
+    position: relative;
+    
+}
+.btn-round
+{
+    border-radius: 15px;
+}
+
+
+
+ 
