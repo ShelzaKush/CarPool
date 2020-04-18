@@ -1,0 +1,11 @@
+
+
+    .offset{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(53, 52, 52, 0.9) none repeat scroll 0 0;
+        opacity: 0.6;
+    }

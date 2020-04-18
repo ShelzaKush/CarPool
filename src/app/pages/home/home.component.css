@@ -1,65 +1,74 @@
- .car-banner-area {
-	position: relative;
-	width: 100%;
+
+.btn-round
+{
+    border-radius: 25px;
 }
 
-.banner-single-slider {
-	background-color: #eee;
-	background-position: center center !important;
-	background-size: cover !important;
-	background-repeat: no-repeat !important;
-	height: 500px;
+.carousel-item img 
+{
+    
+    height:580px;
+    width:100%;
 }
+.carousel-caption
+{
+    padding-bottom:130px;
+    font-family:poppins;
+    
 
-.slider-item-1 {
-	background: url(../../../assets/img/background.jpg);
 }
-
-
-
+.carousel-caption h2
+{
+    
+    font-size:40px;
+    font-weight:bold;
+}
+.carousel-caption h2 span
+{
+    
+    color:#F7DC6F;
+}
+.carousel-caption a
+{
+    background:#C0392B;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color:#fff;
+    border-radius: 25px;
+}
+ 
 .slider-offset {
 	position: absolute;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background: rgba(68, 68, 68, 0.9) none repeat scroll 0 0;
+	background: rgba(26, 26, 26, 0.9) none repeat scroll 0 0;
 	opacity: 0.4;
-	
 }
-
-.banner-text {
+.offset{
 	position: absolute;
-	top: 35%;
-	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
 	width: 100%;
-	text-align: center
+	background: rgba(53, 52, 52, 0.9) none repeat scroll 0 0;
+	opacity: 0.6;
 }
-
-.banner-search h2 {
-	color: #fff;
-	text-transform: capitalize;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	font-size: 50px;
-	margin-bottom: 15px;
-}
-
-.banner-search h4 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
-	color: #fff;
-	font-weight: 500;
-}
-.about{
-    height: 400px;
-    position: relative;
-    
-}
-.btn-round
-{
-    border-radius: 15px;
-}
-
-
-
- 
+.main2
+        {
+            width: 100%;
+         
+        }
+        .main3
+        {
+			width: 100%;
+			position: relative;
+			
+           
+        }
+        .main5
+        {
+            width: 100%;
+       
+        }
