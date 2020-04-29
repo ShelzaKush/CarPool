@@ -1,0 +1,82 @@
+<app-header-all></app-header-all>
+<img class="wave" src="../../../assets/img/wave.png">
+<div class="container">
+    <div class="img">
+        <img class="imgg" src="../../../assets/img/car.png">
+    </div>
+
+   
+</div>
+<div class="content">
+   
+    <mat-card>
+        
+            <mat-card-title align="middle">Enter Your Details</mat-card-title>
+            <mat-card-subtitle align="middle">Agra-Delhi (9:00p.m)</mat-card-subtitle>
+            <mat-card-content>
+               <mat-form-field class="full-width" floatLabel="auto" hideRequiredMarker appearance="outline">
+                   <mat-label>Full Name</mat-label>
+                    <input matInput type="text" required/>
+                    
+               </mat-form-field>
+               <mat-form-field class="full-width" floatLabel="auto" hideRequiredMarker appearance="outline">
+                
+                <mat-label>Email</mat-label>
+                <input matInput type="email" required/>
+            </mat-form-field>
+            <mat-form-field class="full-width" floatLabel="auto" hideRequiredMarker appearance="outline">
+                
+                <mat-label>Phone No</mat-label>
+                <input matInput type="number" required/>
+                
+            </mat-form-field>
+            
+
+            <mat-form-field class="full-width" floatLabel="auto" hideRequiredMarker appearance="outline">
+                
+                <mat-label>No of Seats</mat-label>
+                    <input matInput type="number" required/>
+            </mat-form-field>
+            <mat-form-field class="full-width" floatLabel="auto" hideRequiredMarker appearance="outline">
+                
+                <mat-label>Pick-up Location</mat-label>
+                    <input matInput type="text" required/>
+            </mat-form-field>
+          </mat-card-content>
+            <mat-card-actions align="end">
+                <button mat-raised-button  [routerLink]="['/ride-info']" color="primary">Back</button>
+                <button mat-raised-button   color="warn" data-toggle="modal" data-target="#exampleModalCenter">Confirm Ride</button>
+             </mat-card-actions>
+            
+        </mat-card>
+
+        <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalCenterTitle">Varify OTP</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onSubmit()" [formGroup]="form">
+            <h3>Enter your OTP </h3>
+            <div class="row">
+                <div class="form-group col-sm-2" *ngFor="let input of formInput;  index as i">
+                    <input #formRow type="text" formControlName="{{input}}" class="form-control otpp"  maxlength="1" (keyup)="keyUpEvent($event, i)">
+                  </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+      
+</div>

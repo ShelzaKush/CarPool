@@ -1,0 +1,45 @@
+<link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" />
+<app-header-all></app-header-all>
+<img class="wave" src="../../../assets/img/wave.png">
+<div class="container">
+    <div class="img">
+        <img class="imgg" src="../../../assets/img/car.png">
+    </div>
+
+   
+</div>
+
+  
+<div class="content">
+    <div class="card" >
+        
+        <span class="title mat-display-1"> Find Your Ride</span>
+        <form>
+            <div class="form-group row">
+                <label for="datepicker" class="col-sm-2 col-form-label">Date</label>
+                <div class="col-sm-10">
+                    
+                  
+                  <ejs-datepicker id='datepicker' placeholder='Select a date' [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-datepicker>
+                </div>
+              </div>
+            <div class="form-group row">
+              <label for="source" class="col-sm-2 col-form-label">Leaving from</label>
+              <div class="col-sm-10">
+                <input type="text"  class="form-control" id="source" placeholder="eg-Agra">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="Destination" class="col-sm-2 col-form-label">Go To</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="Destination" placeholder="eg-Delhi">
+              </div>
+            </div>
+            <button type="submit" routerLink="/ride-details" class="btn btn-primary">Search</button>
+          </form>
+    </div>
+</div>
