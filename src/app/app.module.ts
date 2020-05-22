@@ -18,12 +18,15 @@ import { RidingDetailsComponent } from './pages/riding-details/riding-details.co
 import { RidingInfoComponent } from './pages/riding-info/riding-info.component';
 import { PassengerInfoComponent } from './Pages/passenger-info/passenger-info.component';
 import { ReactiveFormsModule} from '@angular/forms';
-import { FormsModule} from '@angular/forms';
-import { Login2Component } from './login2/login2.component';
-import { UserhomeComponent } from './pages/userhome/userhome.component';
+import { FormsModule} from '@angular/forms'
+
 import { OfferHeaderComponent } from './offer-header/offer-header.component';
 import { OfferRideDetailsComponent } from './pages/offer-ride-details/offer-ride-details.component';
-import { OffHeaderComponent } from './off-header/off-header.component';
+
+
+import { AuthService} from './services/auth.service'
+import {HttpClientModule} from '@angular/common/http';
+import { VehicleInfoComponent } from './pages/vehicle-info/vehicle-info.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +41,12 @@ import { OffHeaderComponent } from './off-header/off-header.component';
     RidingDetailsComponent,
     RidingInfoComponent,
     PassengerInfoComponent,
-    Login2Component,
-    UserhomeComponent,
+  
+    
     OfferHeaderComponent,
     OfferRideDetailsComponent,
-    OffHeaderComponent,
+    VehicleInfoComponent,
+    
     
   ],
   imports: [
@@ -53,10 +57,12 @@ import { OffHeaderComponent } from './off-header/off-header.component';
     MatSliderModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
-  providers: [],
+  providers: [AuthService],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule {

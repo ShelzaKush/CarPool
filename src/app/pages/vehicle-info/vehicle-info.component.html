@@ -1,0 +1,91 @@
+
+<app-header></app-header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="../../../assets/img/2053923.png" alt=""/>
+                <h1>One more Step!</h1>
+                <p>You can either ride the wave or suck the surf.   
+
+                    </p>
+                <br/>
+            </div>
+            <div class="col-md-9 register-right">
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active"  >
+                        <h3 class="register-heading">Provide Your Vehicle Information</h3>
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <mat-form-field class="full-width " floatLabel="auto" hideRequiredMarker appearance="outline">
+                                    
+                                    <mat-label>Vehicle No</mat-label>
+                                     <input matInput  type="text" required/>
+                                     
+                                </mat-form-field>
+                                <mat-form-field class="full-width " floatLabel="auto" hideRequiredMarker appearance="outline">
+                                    <mat-label>Vehicle Model</mat-label>
+                                     <input matInput type="text" required/>
+                                     
+                                </mat-form-field>
+                                <mat-form-field class="full-width " floatLabel="auto" hideRequiredMarker appearance="outline">
+                                    <mat-label>Colour</mat-label>
+                                     <input matInput type="text" required/>
+                                     
+                                </mat-form-field>
+                                <mat-form-field class="full-width " floatLabel="auto" hideRequiredMarker appearance="outline">
+                                    <mat-label>Total Seats</mat-label>
+                                     <input matInput type="text" required/>
+                                     
+                                </mat-form-field>
+                                <mat-form-field class="full-width " floatLabel="auto" hideRequiredMarker appearance="outline">
+                                    <mat-label>Vacat Seats</mat-label>
+                                     <input matInput type="text" required/>
+                                     
+                                </mat-form-field>
+                                <!-- <input type="submit" class="btnnext"  value="Confirm"/> -->
+                                 
+                                <a  href="#myModal" class="trigger-btn btnnext" data-toggle="modal">Confirm</a>
+                                  
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE876;</i>
+                    </div>				
+                    <h4 class="modal-title">Awesome!</h4>	
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">You Offered a Ride Successfully. Check your email for detials.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
+<!------ Include the above in your HEAD tag ---------->
+

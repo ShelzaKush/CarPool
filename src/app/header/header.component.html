@@ -1,4 +1,4 @@
-   <div class="container-fluid">
+   <div class="container-fluid" *ngIf="!type">
     <div class="row"> 
       <div class="col-12">
         <!--menu Bar-->
@@ -12,9 +12,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                      <button type="button" routerLink="/loginn" class=" m-2 btn btn-info  btn-round text-light"><i class="fa fa-plus-circle m-1" aria-hidden="true"></i><b>Offer Ride</b></button>
+                      <button type="button" (click)="gotologin('offer')" class=" m-2 btn btn-info  btn-round text-light"><i class="fa fa-plus-circle m-1" aria-hidden="true"></i><b>Offer Ride</b></button>
                       <button type="button" routerLink="/findride" class=" m-2 btn btn-info btn-round text-light"><i class="fa fa-search-plus m-1" aria-hidden="true"></i><b>Find ride</b></button>
-                      <button type="button" routerLink="/login" class=" m-2 btn btn-info btn-round text-light"><i class="fa fa-user m-1" aria-hidden="true"></i><b>Login</b></button>
+                      <button type="button" (click)="gotologin('log')" class=" m-2 btn btn-info btn-round text-light"><i class="fa fa-user m-1" aria-hidden="true"></i><b>Login</b></button>
                       <button type="button" routerLink="/signup" class=" m-2 btn btn-info btn-round text-light"><i class="fa fa-user-plus m-1" aria-hidden="true"></i><b>Signup</b></button>
                       </div>
                 </div>
@@ -24,3 +24,37 @@
       </div>
     </div>
   </div>
+
+
+
+  <nav class="navbar navbar-expand-sm   text-light fixed-top " id="nav" *ngIf="type">
+              
+    <a class="navbar-brand text-light" href="#">
+        <img src="../../assets/img/logo.png" width="30" height="30" alt="logo">
+        nosHACC
+      </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+          <button type="button" routerLink="/loginn" class=" m-2 btn btn-info  btn-round text-light"><i class="fa fa-plus-circle m-1" aria-hidden="true"></i><b>Offer Ride</b></button>
+          <button type="button" routerLink="/findride" class=" m-2 btn btn-info btn-round text-light"><i class="fa fa-search-plus m-1" aria-hidden="true"></i><b>Find ride</b></button>
+        
+         
+          <button class="dropdown" style="border: none; background-color: transparent;">
+        
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../../assets/img/avatar.svg" width="40" height="40" class="rounded-circle">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">your Rides</a>
+                <a class="dropdown-item" href="#"> Profile</a>
+                <a class="dropdown-item" (click)="logoutuser()">Log Out</a>
+              </div>
+         </button>
+         <button class="text-light" style="background-color: transparent; border: none;">User</button>
+          </div>
+    </div>
+  </nav>

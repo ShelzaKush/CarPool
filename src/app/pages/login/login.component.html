@@ -23,7 +23,7 @@
            		   </div>
            		   <div class="div">
            		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
+           		   		<input type="text" class="input"  [(ngModel)]="registerCredentials.user_name"  name="username">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -32,11 +32,11 @@
            		   </div>
            		   <div class="div">
            		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
+           		    	<input type="password"  [(ngModel)]="registerCredentials.password"  name="password" class="input">
             	   </div>
             	</div>
             	<a >Forgot Password?</a>
-				<button class="btn" routerLink="/home-user">Login</button>
+				<button class="btn" (click)="checkUser()" >Login</button>
 				<button class="btn-primary" routerLink="/signup"><a class="signupbtn" >New User? Signup Here!</a></button> 
 					
             </form>
